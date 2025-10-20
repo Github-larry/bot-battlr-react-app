@@ -1,7 +1,7 @@
 import React from "react";
 import BotCard from "./BotCard";
 
-function YourBotArmy({ army, handleReleaseBot }) {
+function YourBotArmy({ army, handleReleaseBot, handleDeleteBot }) {
   return (
     <div className="container mt-5">
       <h3 className="text-center text-danger">Your Bot Army</h3>
@@ -11,6 +11,7 @@ function YourBotArmy({ army, handleReleaseBot }) {
             key={bot.id}
             bot={bot}
             handleReleaseBot={handleReleaseBot}
+            handleDeleteBot={handleDeleteBot}
             showAddButton={false}
           />
         ))}
